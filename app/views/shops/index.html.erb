@@ -1,11 +1,11 @@
 <a href="<%=new_book_shop_path%>" class="btn btn-default">New Carrier</a>
 <div class="container well margin-top-20 small-container">
-    <table class="table table-striped table-hover">
-        <% @shops.each do |shop| %>
+    <table class="table">
+        <% @shops.each do |s| %>
             <tr>
-                <td><%=shop.ShopName %></td>
-                <td><%=shop.Address %></td>
-                <td><%=shop.website %></td>
+                <td><%=s.ShopName %></td>
+                <td><%=s.Address %></td>
+                <td><%=s.website %></td>
             </tr>
         <%end%>
     </table>
